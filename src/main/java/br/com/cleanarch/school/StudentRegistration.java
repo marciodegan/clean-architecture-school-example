@@ -4,7 +4,7 @@ import br.com.cleanarch.school.application.aluno.RegisterStudent;
 import br.com.cleanarch.school.application.aluno.RegisterStudentDto;
 import br.com.cleanarch.school.infrastructure.student.StudentRepositoryInMemory;
 
-public class RegisterStudent {
+public class StudentRegistration {
 
     public static void main(String[] args) {
     /*
@@ -22,7 +22,7 @@ public class RegisterStudent {
         String cpf = "123.456.789-00";
         String email = "fulano@teste.com";
 
-        br.com.cleanarch.school.application.aluno.RegisterStudent register = new br.com.cleanarch.school.application.aluno.RegisterStudent(new StudentRepositoryInMemory());
+        RegisterStudent register = new RegisterStudent(new StudentRepositoryInMemory());
         register.execute(new RegisterStudentDto(name, cpf, email));
 
     }
