@@ -14,7 +14,7 @@ class PhoneTest {
         assertThrows(IllegalArgumentException.class,
                 () -> new Phone(null, "123456789"));
         assertThrows(IllegalArgumentException.class,
-                () -> new Phone("12", "12345678"));
+                () -> new Phone("1222", "12345678"));
     }
 
     @Test
